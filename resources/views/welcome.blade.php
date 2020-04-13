@@ -9,12 +9,13 @@
     </head>
     <body>
         <div id="app">
-            <carousel :auto-play="true" :wrap-around="true">
+            {{-- <carousel :auto-play="true" :wrap-around="true">
                 <img src="https://placeimg.com/640/480/any?1">
                 <img src="https://placeimg.com/640/480/any?2">
                 <img src="https://placeimg.com/640/480/any?3">
                 <img src="https://placeimg.com/640/480/any?4">
-            </carousel>
+            </carousel> --}}
+            <portal-vue-example></portal-vue-example>
             
         </div>
         <script src="/js/app.js"></script>

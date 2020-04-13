@@ -7,6 +7,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import PortalVue from 'portal-vue';
+Vue.use(PortalVue);
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +22,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('carousel', require('./components/Carousel.vue').default);
+Vue.component('portal-vue-example', require('./components/PortalVueExample.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
