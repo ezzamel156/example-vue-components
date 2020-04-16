@@ -23,6 +23,7 @@ Vue.use(PortalVue);
 
 Vue.component('carousel', require('./components/Carousel.vue').default);
 Vue.component('portal-vue-example', require('./components/PortalVueExample.vue').default);
+Vue.component('Accordian', require('./components/Accordian.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -1,7 +1,13 @@
 <template>
     <div>
+        <article class="message is-dark">
+            <div class="message-body">
+                Check console log buddy
+            </div>
+        </article>
         <button @click="alertDebounce($event.target.innerHTML)">Debounce</button>
         <button @click="alertThrottle($event.target.innerHTML)">Throttle</button>
+
     </div>
 </template>
 
