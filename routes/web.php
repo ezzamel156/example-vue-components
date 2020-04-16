@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/carousel');
+});
+Route::get('/carousel', function () {
+    return view('carousel');
+});
+Route::get('/lodash-example', function () {
+    return view('lodash-example');
+});
+Route::get('/portal-example', function () {
+    return view('portal-example');
+});
+Route::get('/accordian-example', function () {
+    $items = collect(
+        [
+            ['title' => 'title 1', 'body' => 'body 1'],
+            ['title' => 'title 2', 'body' => 'body 2']
+        ]
+    );
+    return view('accordian-example', compact('items'));
 });
