@@ -22,8 +22,10 @@ Vue.use(PortalVue);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('carousel', require('./components/Carousel.vue').default);
+Vue.component('carousel-dropdown', require('./components/CarouselDropdown.vue').default);
 Vue.component('portal-vue-example', require('./components/PortalVueExample.vue').default);
-Vue.component('Accordian', require('./components/Accordian.vue').default);
+Vue.component('accordian', require('./components/Accordian.vue').default);
+Vue.component('pinned', require('./components/Pinned.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

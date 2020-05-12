@@ -28,8 +28,13 @@ Route::get('/portal-example', function () {
 Route::get('/accordian-example', function () {
     $items = collect(
         [
-            ['title' => 'title 1', 'body' => 'body 1'],
-            ['title' => 'title 2', 'body' => 'body 2']
+            ['header' => 'title 1', 'content' => '<b>body 1</b>'],
+            ['header' => 'title 2', 'content' => '<b>body 2</b>'],
+            ['header' => 'title 2', 'content' => '<b>body 2</b>'],
+            ['header' => 'title 2', 'content' => '<b>body 2</b>'],
+            ['header' => 'title 2', 'content' => '<b>body 2</b>'],
+            ['header' => 'title 2', 'content' => '<b>body 2</b>'],
+            ['header' => 'title 2', 'content' => '<b>body 2</b>']
         ]
     );
     return view('accordian-example', compact('items'));

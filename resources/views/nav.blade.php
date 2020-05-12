@@ -14,10 +14,9 @@
   
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a href="/carousel" class="navbar-item">
-          Carousel
-        </a>
-  
+        
+        <carousel-dropdown></carousel-dropdown>
+
         <a href="/lodash-example" class="navbar-item">
           Lodash Example
         </a>
@@ -46,3 +45,6 @@
       </div> --}}
     </div>
   </nav>
+
+  <portal-target name="nav-after"></portal-target>
+  

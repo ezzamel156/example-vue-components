@@ -9,11 +9,13 @@
        
     </head>
     <body>
+        <div id="app">
             @include('nav')
-        <div id="app" class="section">
-            <div class="container">
-                @yield('content') 
-            </div>     
+            <div class="section">
+                <div class="container">
+                    @yield('content') 
+                </div>     
+            </div>
         </div>
         <script src="/js/app.js"></script>
     </body>
